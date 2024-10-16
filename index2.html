@@ -6,44 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* Add styles for the image grid */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the section background */
+        .project-section {
+            background-color: #3C5B6F;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        /* Style the header */
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        /* Style for the button */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #3C5B6F;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #FFCC99;
+        }
+
+        /* Organize images in a grid */
         .image-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 columns */
-            gap: 10px; /* space between images */
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 10px;
+            justify-items: center;
             padding: 20px;
         }
 
         .image-grid img {
-            width: 100%; /* Make images responsive */
-            height: 150px; /* Set a fixed height for uniformity */
-            object-fit: cover; /* Ensure images cover their area without distortion */
+            max-width: 100%;
+            height: auto; /* Maintain image aspect ratio */
         }
     </style>
 </head>
 <body>
-    <div class="container has-text-centered">
-        <h1>My 3D Blender</h1>
-        <button onclick="window.location.href='index.html'">Back</button>
-    </div>
+    <div class="project-section">
+        <!-- Back button -->
+        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
 
-    <div class="project-img-container"">
-        <img src="./images/1.png" alt="project image">
+        <!-- Title centered and white -->
+        <h1>My 3D Blender</h1>
+
+        <!-- Image grid -->
+        <div class="image-grid">
+            <img src="./images/1.png" alt="project image">
+            <img src="./images/2.png" alt="project image">
+            <img src="./images/3.png" alt="project image">
+            <img src="./images/4.png" alt="project image">
+        </div>
     </div>
-    <div class="project-img-container"">
-        <img src="./images/2.png" alt="project image">
-     </div>
-    <div class="project-img-container"">
-        <img src="./images/3.png" alt="project image">
-    </div>
-    <div class="project-img-container"">
-        <img src="./images/4.png" alt="project image">
-    </div>
-<!--
-    <div class="image-grid">
-        <img src="./img/1.png" alt="Image 1">
-        <img src="./img/2.png" alt="Image 2">
-        <img src="./img/3.png" alt="Image 3">
-        <img src="./img/4.png" alt="Image 4">
-    </div> -->
 </body>
 </html>
