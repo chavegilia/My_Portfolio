@@ -2,23 +2,22 @@
 <html>
 <head>
     <title>Next Page</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Add styles for the image grid */
+        /* Add styles for the body and reset margins */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
 
-        /* Style for the section background */
+        /* Style for the project section with background color */
         .project-section {
             background-color: #3C5B6F;
             padding: 20px;
             min-height: 100vh;
         }
 
-        /* Style the header */
+        /* Style for the header */
         h1 {
             text-align: center;
             color: white;
@@ -26,13 +25,13 @@
             margin-top: 20px;
         }
 
-        /* Style for the button */
+        /* Style for the back button */
         .back-button {
             position: absolute;
             top: 20px;
             left: 20px;
             padding: 10px 20px;
-            background-color: #fff;
+            background-color: white;
             color: #3C5B6F;
             border: none;
             border-radius: 5px;
@@ -45,36 +44,37 @@
             background-color: #FFCC99;
         }
 
-        /* Organize images in a grid */
+        /* Organize images in a grid of 3 columns */
         .image-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* 3 columns */
-            gap: 10px;
-            justify-items: center;
+            gap: 10px; /* space between images */
             padding: 20px;
         }
 
         .image-grid img {
-            max-width: 100%;
-            height: auto; /* Maintain image aspect ratio */
+            max-width: 100%; /* Make sure the image fits within its container */
+            height: auto; /* Keep aspect ratio */
         }
     </style>
 </head>
 <body>
+
     <div class="project-section">
         <!-- Back button -->
         <button class="back-button" onclick="window.location.href='index.html'">Back</button>
 
-        <!-- Title centered and white -->
+        <!-- Centered title with white text -->
         <h1>My 3D Blender</h1>
 
-        <!-- Image grid -->
+        <!-- Image grid with 3 columns -->
         <div class="image-grid">
-            <img src="./images/1.png" alt="project image">
-            <img src="./images/2.png" alt="project image">
-            <img src="./images/3.png" alt="project image">
-            <img src="./images/4.png" alt="project image">
+            <img src="./images/1.png" alt="Project Image 1">
+            <img src="./images/2.png" alt="Project Image 2">
+            <img src="./images/3.png" alt="Project Image 3">
+            <img src="./images/4.png" alt="Project Image 4">
         </div>
     </div>
+
 </body>
 </html>
